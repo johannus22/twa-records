@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #202124;
+    letter-spacing: 1px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    background: #f8f9fa;
+    transition: box-shadow 0.2s;
+}
+
+.search-input:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: #4285f4;
+}
+
+.search-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: 1px solid #dfe1e5;
+    border-left: none;
+    border-radius: 0 24px 24px 0;
+    background: #f8f9fa;
+    color: #5f6368;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.search-button:hover {
+    background: #f1f3f4;
+    color: #202124;
+}
+
+.search-suggestions {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(60,64,67,0.08);
+    z-index: 10;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #dfe1e5;
+    border-top: none;
+    overflow: hidden;
+}
+
+.suggestion-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.suggestion-item:hover, .suggestion-item:active {
+    background: #f1f3f4;
+}
+
+.student-result {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(60,64,67,0.10);
+    transition: opacity 0.2s;
+}
+
+.student-result strong {
+    font-size: 1.6rem;
+    color: #1a73e8;
+}
+
+.student-result span {
+    display: block;
+    color: #444;
+    margin-top: 8px;
+    font-size: 1.25rem;
+}
+
+.student-result .offenses {
+    margin-top: 18px;
+    font-size: 1.15rem;
+}
+
+.student-result .offenses ul {
+    list-style: disc inside;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 18px;
+}
+
+.student-result .offenses li {
+    margin-bottom: 6px;
+    color: #d93025;
+    font-weight: 600;
+    font-size: 1.13rem;
+}
+
+.violation-details {
+    margin-top: 18px;
+    background: #fffbe7;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 1.08rem;
+    color: #5f6368;
+    box-shadow: 0 1px 3px rgba(60,64,67,0.06);
+}
+
+.violation-details span {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.violation-details b {
+    color: #c5221f;
+    font-weight: 600;
+}

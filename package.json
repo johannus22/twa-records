@@ -1,0 +1,20 @@
+{
+  "name": "twa-records",
+  "version": "1.0.0",
+  "description": "A simple HTML/CSS/JS page for TWA Records",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server ."
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "static",
+    "twa-records"
+  ],
+  "author": "Johannus (John Rafael P. Masilungan)",
+  "license": "MIT",
+  "devDependencies": {}
+}
